@@ -1,16 +1,17 @@
 # Portfolio Deployment on Kubernetes
-<p align="center">
-   <a href="https://skillicons.dev">
-      <img src="https://skillicons.dev/icons?i=git,kubernetes,docker&size=10" />
-   </a>
-</p>
----
+<div align="left">
+   <img src="https://techstack-generator.vercel.app/kubernetes-icon.svg" alt="icon" width="50" height="50" />
+   <img src="https://techstack-generator.vercel.app/docker-icon.svg" alt="icon" width="50" height="50" />
+   
+  
+</div>
 
-## 🚀 Overview
+
+## Overview
 
 Welcome to the **Portfolio Deployment on Kubernetes** project! This repository contains a comprehensive setup for deploying a personal portfolio application using **Kubernetes** and **Docker**. It demonstrates best practices in containerization and orchestration, ensuring scalability and maintainability.
 
-## 📦 Features
+##  Features
 
 - **Dockerized Application**: Easily deploy your portfolio using Docker containers.
 - **Kubernetes Orchestration**: Leverage Kubernetes for automated deployment, scaling, and management of your application.
@@ -18,7 +19,7 @@ Welcome to the **Portfolio Deployment on Kubernetes** project! This repository c
 - **Load Balancing**: Distribute incoming traffic effectively with Kubernetes Services.
 - **Simple Configuration**: Use YAML files for easy setup and configuration management.
 
-## 📜 Table of Contents
+##  Table of Contents
 
 1. [Getting Started](#getting-started)
 2. [Prerequisites](#prerequisites)
@@ -28,11 +29,11 @@ Welcome to the **Portfolio Deployment on Kubernetes** project! This repository c
 6. [Contributing](#contributing)
 7. [License](#license)
 
-## 🚧 Getting Started
+##  Getting Started
 
 Follow these instructions to get a copy of the project up and running on your local machine.
 
-### 📋 Prerequisites
+###  Prerequisites
 
 Before you begin, ensure you have the following installed:
 
@@ -41,7 +42,7 @@ Before you begin, ensure you have the following installed:
 - [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
 - [Minikube](https://minikube.sigs.k8s.io/docs/start/) (for local Kubernetes clusters)
 
-## 🚀 Deployment
+## Deployment
 
 To deploy your portfolio on Kubernetes, follow these steps:
 
@@ -66,10 +67,9 @@ To deploy your portfolio on Kubernetes, follow these steps:
    minikube service Portfolio-service --url
    ```
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-Feel free to contribute to this project by submitting issues or pull requests. Happy deploying!
