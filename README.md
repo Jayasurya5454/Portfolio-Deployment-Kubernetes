@@ -1,8 +1,9 @@
 # Portfolio Deployment on Kubernetes
-
-![Kubernetes Logo](https://kubernetes.io/images/favicon.ico)  
-![Docker Logo](https://www.docker.com/wp-content/uploads/2022/03/horizontal-logo-monochromatic-white.png)
-
+<p align="center">
+   <a href="https://skillicons.dev">
+      <img src="https://skillicons.dev/icons?i=git,kubernetes,docker&size=10" />
+   </a>
+</p>
 ---
 
 ## 🚀 Overview
@@ -40,20 +41,35 @@ Before you begin, ensure you have the following installed:
 - [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
 - [Minikube](https://minikube.sigs.k8s.io/docs/start/) (for local Kubernetes clusters)
 
-
-### Deployment
-
-To deploy your portfolio on Kubernetes, follow these steps:
-
-1. Apply the deployment configuration:### Deployment
+## 🚀 Deployment
 
 To deploy your portfolio on Kubernetes, follow these steps:
 
 1. Apply the deployment configuration:
    ```bash
-   kubectl apply -f deployment.yaml
-
+   kubectl apply -f Portfolio-Deployment.yaml
+   ```
+2. Apply the service configuration:
    ```bash
-   kubectl apply -f deployment.yaml
+   kubectl apply -f Portfolio-service.yaml
+   ```
+3. Verify the deployment:
+   ```bash
+   kubectl get pods
+   ```
+4. Verify the services:
+   ```bash
+   kubectl get services
+   ```
+5. Get the URL to see the output of the deployment as a service:
+   ```bash
+   minikube service Portfolio-service --url
+   ```
 
+## 📄 License
 
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+Feel free to contribute to this project by submitting issues or pull requests. Happy deploying!
