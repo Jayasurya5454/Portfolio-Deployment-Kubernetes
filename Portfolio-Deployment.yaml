@@ -15,7 +15,7 @@ spec:
         app: portfolio
     spec:
       containers:
-      - name: quotes
+      - name: portfolio
         image: jayasurya5454/jayasuryaportfolio:latest
         ports:
         - containerPort: 80  
