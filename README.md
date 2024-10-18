@@ -15,23 +15,8 @@ Welcome to the **Portfolio Deployment on Kubernetes** project! This repository c
 
 - **Dockerized Application**: Easily deploy your portfolio using Docker containers.
 - **Kubernetes Orchestration**: Leverage Kubernetes for automated deployment, scaling, and management of your application.
-- **Multi-Environment Support**: Seamlessly switch between development and production environments.
-- **Load Balancing**: Distribute incoming traffic effectively with Kubernetes Services.
 - **Simple Configuration**: Use YAML files for easy setup and configuration management.
 
-##  Table of Contents
-
-1. [Getting Started](#getting-started)
-2. [Prerequisites](#prerequisites)
-3. [Installation](#installation)
-4. [Deployment](#deployment)
-5. [Usage](#usage)
-6. [Contributing](#contributing)
-7. [License](#license)
-
-##  Getting Started
-
-Follow these instructions to get a copy of the project up and running on your local machine.
 
 ###  Prerequisites
 
@@ -62,14 +47,15 @@ To deploy your portfolio on Kubernetes, follow these steps:
    ```bash
    kubectl get services
    ```
-5. Get the URL to see the output of the deployment as a service:
+5.Use the command to forward a service's port to your local machine for easy access:
    ```bash
-   minikube service Portfolio-service --url
+    kubectl port-forward service/Portfolio-service 8080:80
    ```
 
-##  License
+6. Run the command to open the deployed service in your default browser:
+   ```bash
+   minikube service Portfolio-service
+   ```
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
+ 
 
