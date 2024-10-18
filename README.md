@@ -45,12 +45,12 @@ To deploy your portfolio on Kubernetes, follow these steps:
    ```
 4. Verify the services:
    ```bash
-   kubectl get services
+   kubectl get svc
    ```
 5.Use the command to forward a service's port to your local machine for easy access:
-    ```bash
+   ```bash
     kubectl port-forward service/Portfolio-service 8080:80
-    ```
+   ```
 
 6. Run the command to open the deployed service in your default browser:
    ```bash
